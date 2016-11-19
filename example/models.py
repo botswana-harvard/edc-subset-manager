@@ -13,7 +13,7 @@ class Manager(SubsetManagerMixin, models.Manager):
     reference_model = 'example.referencemodel'
     reference_attr = 'reference_value'
     to_reference_model = ['reference_model']
-    subset_attr = 'subset_value'
+    reference_subset_attr = 'subset_value'
 
     @property
     def reference_value(self):
